@@ -1,0 +1,5 @@
+---
+# defaults file for create_role
+#
+user_state: present
+user_name: default

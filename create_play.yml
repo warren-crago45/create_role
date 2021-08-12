@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  vars:
+          user_name: warren.crago
+          user_state: present
+          # ssh_key: ~/.ssh/Master.pem
+          ssh_key: ~/.ssh/ssh_key.pub
+  tasks:
+          - include_tasks: /home/ansible/playbooks/create_user/create_user.yml

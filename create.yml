@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  tasks:
+          - include_role:
+                  name: create_user
+            vars:
+                  user_name: warren.crago
+                  user_state: present
+                  #  ssh_key: ~/.ssh/Master.pem
+                  ssh_key: ~/.ssh/ssh_key.pub
